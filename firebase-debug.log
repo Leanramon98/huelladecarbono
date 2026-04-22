@@ -1,0 +1,119 @@
+[debug] [2026-04-22T02:40:46.788Z] ----------------------------------------------------------------------
+[debug] [2026-04-22T02:40:46.789Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting --non-interactive --project huelladecarbono-a0190
+[debug] [2026-04-22T02:40:46.790Z] CLI Version:   15.9.1
+[debug] [2026-04-22T02:40:46.790Z] Platform:      darwin
+[debug] [2026-04-22T02:40:46.790Z] Node Version:  v22.17.0
+[debug] [2026-04-22T02:40:46.790Z] Time:          Tue Apr 21 2026 23:40:46 GMT-0300 (Argentina Standard Time)
+[debug] [2026-04-22T02:40:46.790Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-22T02:40:47.692Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-04-22T02:40:47.692Z] > authorizing via signed-in user (lean.ramon98@gmail.com)
+[debug] [2026-04-22T02:40:47.692Z] [iam] checking project huelladecarbono-a0190 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-04-22T02:40:47.693Z] Checked if tokens are valid: true, expires at: 1776829036967
+[debug] [2026-04-22T02:40:47.693Z] Checked if tokens are valid: true, expires at: 1776829036967
+[debug] [2026-04-22T02:40:47.693Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/huelladecarbono-a0190:testIamPermissions [none]
+[debug] [2026-04-22T02:40:47.694Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/huelladecarbono-a0190:testIamPermissions  x-goog-user-project=huelladecarbono-a0190
+[debug] [2026-04-22T02:40:47.694Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/huelladecarbono-a0190:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-04-22T02:40:48.650Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/huelladecarbono-a0190:testIamPermissions 200
+[debug] [2026-04-22T02:40:48.650Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/huelladecarbono-a0190:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-04-22T02:40:48.651Z] Checked if tokens are valid: true, expires at: 1776829036967
+[debug] [2026-04-22T02:40:48.651Z] Checked if tokens are valid: true, expires at: 1776829036967
+[debug] [2026-04-22T02:40:48.651Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/huelladecarbono-a0190 [none]
+[debug] [2026-04-22T02:40:49.041Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/huelladecarbono-a0190 200
+[debug] [2026-04-22T02:40:49.041Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/huelladecarbono-a0190 {"projectId":"huelladecarbono-a0190","projectNumber":"598192398595","displayName":"huelladecarbono","name":"projects/huelladecarbono-a0190","resources":{"hostingSite":"huelladecarbono-a0190"},"state":"ACTIVE","etag":"1_25f9ec3e-c670-4aa3-b11b-b15d0561705a"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2026-04-22T02:42:27.870Z] Checked if tokens are valid: true, expires at: 1776829036967
+[debug] [2026-04-22T02:42:27.871Z] Checked if tokens are valid: true, expires at: 1776829036967
+[debug] [2026-04-22T02:42:27.871Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/huelladecarbono-a0190/sites/huelladecarbono-a0190 [none]
+[debug] [2026-04-22T02:42:29.103Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/huelladecarbono-a0190/sites/huelladecarbono-a0190 200
+[debug] [2026-04-22T02:42:29.103Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/huelladecarbono-a0190/sites/huelladecarbono-a0190 {"name":"projects/huelladecarbono-a0190/sites/huelladecarbono-a0190","defaultUrl":"https://huelladecarbono-a0190.web.app","type":"DEFAULT_SITE"}
+[debug] [2026-04-22T02:42:38.012Z] ----------------------------------------------------------------------
+[debug] [2026-04-22T02:42:38.014Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting --project huelladecarbono-a0190 --debug
+[debug] [2026-04-22T02:42:38.014Z] CLI Version:   15.9.1
+[debug] [2026-04-22T02:42:38.014Z] Platform:      darwin
+[debug] [2026-04-22T02:42:38.014Z] Node Version:  v22.17.0
+[debug] [2026-04-22T02:42:38.014Z] Time:          Tue Apr 21 2026 23:42:38 GMT-0300 (Argentina Standard Time)
+[debug] [2026-04-22T02:42:38.014Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-22T02:42:39.030Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-04-22T02:42:39.030Z] > authorizing via signed-in user (lean.ramon98@gmail.com)
+[debug] [2026-04-22T02:42:39.030Z] [iam] checking project huelladecarbono-a0190 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-04-22T02:42:39.031Z] Checked if tokens are valid: true, expires at: 1776829036967
+[debug] [2026-04-22T02:42:39.031Z] Checked if tokens are valid: true, expires at: 1776829036967
+[debug] [2026-04-22T02:42:39.031Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/huelladecarbono-a0190:testIamPermissions [none]
+[debug] [2026-04-22T02:42:39.032Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/huelladecarbono-a0190:testIamPermissions  x-goog-user-project=huelladecarbono-a0190
+[debug] [2026-04-22T02:42:39.032Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/huelladecarbono-a0190:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-04-22T02:42:39.938Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/huelladecarbono-a0190:testIamPermissions 200
+[debug] [2026-04-22T02:42:39.939Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/huelladecarbono-a0190:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-04-22T02:42:39.940Z] Checked if tokens are valid: true, expires at: 1776829036967
+[debug] [2026-04-22T02:42:39.940Z] Checked if tokens are valid: true, expires at: 1776829036967
+[debug] [2026-04-22T02:42:39.940Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/huelladecarbono-a0190 [none]
+[debug] [2026-04-22T02:42:40.334Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/huelladecarbono-a0190 200
+[debug] [2026-04-22T02:42:40.335Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/huelladecarbono-a0190 {"projectId":"huelladecarbono-a0190","projectNumber":"598192398595","displayName":"huelladecarbono","name":"projects/huelladecarbono-a0190","resources":{"hostingSite":"huelladecarbono-a0190"},"state":"ACTIVE","etag":"1_25f9ec3e-c670-4aa3-b11b-b15d0561705a"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2026-04-22T02:42:43.757Z] Checked if tokens are valid: true, expires at: 1776829036967
+[debug] [2026-04-22T02:42:43.757Z] Checked if tokens are valid: true, expires at: 1776829036967
+[debug] [2026-04-22T02:42:43.757Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/huelladecarbono-a0190/sites/huelladecarbono-a0190 [none]
+[debug] [2026-04-22T02:42:45.061Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/huelladecarbono-a0190/sites/huelladecarbono-a0190 200
+[debug] [2026-04-22T02:42:45.062Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/huelladecarbono-a0190/sites/huelladecarbono-a0190 {"name":"projects/huelladecarbono-a0190/sites/huelladecarbono-a0190","defaultUrl":"https://huelladecarbono-a0190.web.app","type":"DEFAULT_SITE"}
+[debug] [2026-04-22T02:43:20.269Z] ----------------------------------------------------------------------
+[debug] [2026-04-22T02:43:20.275Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting --non-interactive --project huelladecarbono-a0190
+[debug] [2026-04-22T02:43:20.276Z] CLI Version:   15.9.1
+[debug] [2026-04-22T02:43:20.276Z] Platform:      darwin
+[debug] [2026-04-22T02:43:20.276Z] Node Version:  v22.17.0
+[debug] [2026-04-22T02:43:20.276Z] Time:          Tue Apr 21 2026 23:43:20 GMT-0300 (Argentina Standard Time)
+[debug] [2026-04-22T02:43:20.276Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-22T02:43:21.160Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-04-22T02:43:21.160Z] > authorizing via signed-in user (lean.ramon98@gmail.com)
+[debug] [2026-04-22T02:43:21.160Z] [iam] checking project huelladecarbono-a0190 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-04-22T02:43:21.161Z] Checked if tokens are valid: true, expires at: 1776829036967
+[debug] [2026-04-22T02:43:21.161Z] Checked if tokens are valid: true, expires at: 1776829036967
+[debug] [2026-04-22T02:43:21.162Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/huelladecarbono-a0190:testIamPermissions [none]
+[debug] [2026-04-22T02:43:21.162Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/huelladecarbono-a0190:testIamPermissions  x-goog-user-project=huelladecarbono-a0190
+[debug] [2026-04-22T02:43:21.162Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/huelladecarbono-a0190:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-04-22T02:43:22.096Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/huelladecarbono-a0190:testIamPermissions 200
+[debug] [2026-04-22T02:43:22.097Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/huelladecarbono-a0190:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-04-22T02:43:22.098Z] Checked if tokens are valid: true, expires at: 1776829036967
+[debug] [2026-04-22T02:43:22.098Z] Checked if tokens are valid: true, expires at: 1776829036967
+[debug] [2026-04-22T02:43:22.098Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/huelladecarbono-a0190 [none]
+[debug] [2026-04-22T02:43:22.572Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/huelladecarbono-a0190 200
+[debug] [2026-04-22T02:43:22.572Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/huelladecarbono-a0190 {"projectId":"huelladecarbono-a0190","projectNumber":"598192398595","displayName":"huelladecarbono","name":"projects/huelladecarbono-a0190","resources":{"hostingSite":"huelladecarbono-a0190"},"state":"ACTIVE","etag":"1_25f9ec3e-c670-4aa3-b11b-b15d0561705a"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2026-04-22T02:43:25.648Z] Checked if tokens are valid: true, expires at: 1776829036967
+[debug] [2026-04-22T02:43:25.648Z] Checked if tokens are valid: true, expires at: 1776829036967
+[debug] [2026-04-22T02:43:25.648Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/huelladecarbono-a0190/sites/huelladecarbono-a0190 [none]
+[debug] [2026-04-22T02:43:26.987Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/huelladecarbono-a0190/sites/huelladecarbono-a0190 200
+[debug] [2026-04-22T02:43:26.987Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/huelladecarbono-a0190/sites/huelladecarbono-a0190 {"name":"projects/huelladecarbono-a0190/sites/huelladecarbono-a0190","defaultUrl":"https://huelladecarbono-a0190.web.app","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.35
+
+
+[info]    Creating an optimized production build ...
+

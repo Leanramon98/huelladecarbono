@@ -29,24 +29,20 @@ import {
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
+import { db } from '@/lib/firebase';
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
+
 export default function ResultsPage() {
   const t = useTranslations();
   const router = useRouter();
   const { tripData, reset } = useWizardStore();
   const [isClient, setIsClient] = useState(false);
+  const [isSaving, setIsSaving] = useState(false);
 
   // Hardcoded values for now
   const EVENT_AVERAGE = 1500;
   const SUSTAINABLE_GOAL = 500;
   const PRICE_PER_TON = 15; // USD
-
-  useEffect(() => {
-    setIsClient(true);
-    // If no origin is set, redirect back to wizard
-    if (!tripData.origin?.iata) {
-      router.push('/wizard');
-    }
-  }, [tripData, router]);
 
   // Calculations
   const result = calculateTotal(tripData, {
@@ -62,6 +58,33 @@ export default function ResultsPage() {
     compensationPricePerTon: PRICE_PER_TON,
     offsetLinks: []
   });
+
+  useEffect(() => {
+    setIsClient(true);
+    if (!tripData.origin?.iata) {
+      router.push('/wizard');
+      return;
+    }
+
+    // Save to Firestore
+    const saveToFirestore = async () => {
+      try {
+        setIsSaving(true);
+        await addDoc(collection(db, 'submissions'), {
+          ...tripData,
+          totalCo2: result.total,
+          timestamp: serverTimestamp(),
+        });
+        console.log('Successfully saved to Firestore');
+      } catch (error) {
+        console.error('Error saving to Firestore:', error);
+      } finally {
+        setIsSaving(false);
+      }
+    };
+
+    saveToFirestore();
+  }, [tripData, router, result.total]);
 
   const total = result.total;
   const displayTotal = total > 1000 ? (total / 1000).toFixed(1) : Math.round(total);
