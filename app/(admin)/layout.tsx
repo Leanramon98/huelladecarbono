@@ -2,19 +2,25 @@
 
 import React, { useState, useEffect } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
+import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  LayoutDashboard, 
+  BarChart3, 
   Settings, 
   Calculator, 
   MapPin, 
   QrCode, 
   Download, 
   Users, 
-  ExternalLink, 
   LogOut,
+  ChevronLeft,
+  ChevronRight,
   Menu,
   X,
-  PlusCircle
+  Eye,
+  Moon,
+  Sun,
+  LayoutDashboard,
+  ExternalLink
 } from 'lucide-react';
 import Link from 'next/link';
 

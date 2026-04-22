@@ -1,6 +1,7 @@
 'use client';
 
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import { 
   Users, 
   Globe, 
@@ -10,7 +11,8 @@ import {
   TrendingUp,
   Filter,
   Calendar,
-  MoreVertical
+  MoreVertical,
+  MapPin
 } from 'lucide-react';
 import { 
   BarChart, 
