@@ -1,0 +1,85 @@
+{
+  "welcome": {
+    "title": "Measure your travel footprint",
+    "subtitle": "Discover the environmental impact of your trip and how to offset it",
+    "cta": "Start",
+    "step1": "Answer",
+    "step2": "Discover",
+    "step3": "Act",
+    "minutes": "in 2 minutes"
+  },
+  "wizard": {
+    "progress": "Step {step} of {total}",
+    "origin": {
+      "title": "Where did you travel from?",
+      "placeholder": "Search your city...",
+      "local": "I'm local"
+    },
+    "flights": {
+      "title": "How was your flight?",
+      "direct": "Direct",
+      "stopovers": "With stopovers",
+      "addStopover": "Add stopover",
+      "class": "Class",
+      "roundTrip": "Round trip",
+      "oneWay": "One way"
+    },
+    "transport": {
+      "title": "How do you get around?",
+      "taxi": "Taxi / Uber",
+      "public": "Public transit",
+      "bike": "Bike / Walking",
+      "rental": "Rental car",
+      "days": "Days at the event"
+    },
+    "accommodation": {
+      "title": "Where are you staying?",
+      "hotel5": "Hotel 5★",
+      "hotel3": "Hotel 3-4★",
+      "airbnb": "Airbnb",
+      "hostel": "Hostel",
+      "friends": "Friends/Family",
+      "nights": "Nights"
+    },
+    "extras": {
+      "title": "Extras",
+      "meat": "Red meat meals",
+      "souvenirs": "Merchandise / Souvenirs",
+      "skip": "Skip this step"
+    },
+    "nav": {
+      "next": "Next",
+      "back": "Back",
+      "seeResults": "See results"
+    }
+  },
+  "results": {
+    "title": "Your trip generated",
+    "unit": "kg CO₂",
+    "breakdown": "Breakdown",
+    "flights": "Flights",
+    "transport": "Transport",
+    "accommodation": "Accommodation",
+    "food": "Food",
+    "extras": "Extras",
+    "equivalency": {
+      "trees": "Equals {count} trees absorbing CO₂ for 1 year"
+    },
+    "comparison": {
+      "yours": "Your footprint",
+      "average": "Event average"
+    }
+  },
+  "recommendations": {
+    "title": "Recommendations",
+    "offset": {
+      "title": "Offset your footprint",
+      "cost": "for approximately USD {amount}"
+    },
+    "share": "Share your result"
+  },
+  "common": {
+    "kgCO2": "kg CO₂",
+    "eventBy": "Powered by"
+  }
+}

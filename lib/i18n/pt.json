@@ -1,0 +1,85 @@
+{
+  "welcome": {
+    "title": "Meça sua pegada de viagem",
+    "subtitle": "Descubra o impacto ambiental da sua viagem e como compensá-lo",
+    "cta": "Começar",
+    "step1": "Responda",
+    "step2": "Descubra",
+    "step3": "Aja",
+    "minutes": "em 2 minutos"
+  },
+  "wizard": {
+    "progress": "Etapa {step} de {total}",
+    "origin": {
+      "title": "De onde você viajou?",
+      "placeholder": "Busque sua cidade...",
+      "local": "Sou local"
+    },
+    "flights": {
+      "title": "Como foi seu voo?",
+      "direct": "Direto",
+      "stopovers": "Com escalas",
+      "addStopover": "Adicionar escala",
+      "class": "Classe",
+      "roundTrip": "Ida e volta",
+      "oneWay": "Somente ida"
+    },
+    "transport": {
+      "title": "Como você se locomove?",
+      "taxi": "Taxi / Uber",
+      "public": "Transporte público",
+      "bike": "Bicicleta / A pé",
+      "rental": "Carro alugado",
+      "days": "Dias no evento"
+    },
+    "accommodation": {
+      "title": "Onde você se hospeda?",
+      "hotel5": "Hotel 5★",
+      "hotel3": "Hotel 3-4★",
+      "airbnb": "Airbnb",
+      "hostel": "Hostel",
+      "friends": "Casa de amigos",
+      "nights": "Noites"
+    },
+    "extras": {
+      "title": "Extras",
+      "meat": "Refeições com carne vermelha",
+      "souvenirs": "Mercadorias / Souvenirs",
+      "skip": "Pular esta etapa"
+    },
+    "nav": {
+      "next": "Próximo",
+      "back": "Anterior",
+      "seeResults": "Ver resultados"
+    }
+  },
+  "results": {
+    "title": "Sua viagem gerou",
+    "unit": "kg CO₂",
+    "breakdown": "Detalhamento",
+    "flights": "Voos",
+    "transport": "Transporte",
+    "accommodation": "Hospedagem",
+    "food": "Alimentação",
+    "extras": "Extras",
+    "equivalency": {
+      "trees": "Equivale a {count} árvores absorvendo CO₂ por 1 ano"
+    },
+    "comparison": {
+      "yours": "Sua pegada",
+      "average": "Média do evento"
+    }
+  },
+  "recommendations": {
+    "title": "Recomendações",
+    "offset": {
+      "title": "Compense sua pegada",
+      "cost": "por aproximadamente USD {amount}"
+    },
+    "share": "Compartilhe seu resultado"
+  },
+  "common": {
+    "kgCO2": "kg CO₂",
+    "eventBy": "Powered by"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "welcome": {
+    "title": "Medí tu huella de viaje",
+    "subtitle": "Descubrí el impacto ambiental de tu viaje y cómo compensarlo",
+    "cta": "Empezar",
+    "step1": "Respondé",
+    "step2": "Descubrí",
+    "step3": "Actuá",
+    "minutes": "en 2 minutos"
+  },
+  "wizard": {
+    "progress": "Paso {step} de {total}",
+    "origin": {
+      "title": "¿Desde dónde viajaste?",
+      "placeholder": "Buscá tu ciudad...",
+      "local": "Soy local"
+    },
+    "flights": {
+      "title": "¿Cómo fue tu vuelo?",
+      "direct": "Directo",
+      "stopovers": "Con escalas",
+      "addStopover": "Agregar escala",
+      "class": "Clase",
+      "roundTrip": "Ida y vuelta",
+      "oneWay": "Solo ida"
+    },
+    "transport": {
+      "title": "¿Cómo te movés en la ciudad?",
+      "taxi": "Taxi / Uber",
+      "public": "Transporte público",
+      "bike": "Bicicleta / A pie",
+      "rental": "Auto de alquiler",
+      "days": "Días en el evento"
+    },
+    "accommodation": {
+      "title": "¿Dónde te hospedás?",
+      "hotel5": "Hotel 5★",
+      "hotel3": "Hotel 3-4★",
+      "airbnb": "Airbnb",
+      "hostel": "Hostel",
+      "friends": "Casa de amigos",
+      "nights": "Noches"
+    },
+    "extras": {
+      "title": "Extras",
+      "meat": "Comidas con carne roja",
+      "souvenirs": "Mercadería / Souvenirs",
+      "skip": "Saltar este paso"
+    },
+    "nav": {
+      "next": "Siguiente",
+      "back": "Anterior",
+      "seeResults": "Ver resultados"
+    }
+  },
+  "results": {
+    "title": "Tu viaje generó",
+    "unit": "kg CO₂",
+    "breakdown": "Desglose",
+    "flights": "Vuelos",
+    "transport": "Transporte",
+    "accommodation": "Alojamiento",
+    "food": "Alimentación",
+    "extras": "Extras",
+    "equivalency": {
+      "trees": "Equivale a {count} árboles absorbiendo CO₂ por 1 año"
+    },
+    "comparison": {
+      "yours": "Tu huella",
+      "average": "Promedio del evento"
+    }
+  },
+  "recommendations": {
+    "title": "Recomendaciones",
+    "offset": {
+      "title": "Compensá tu huella",
+      "cost": "por aproximadamente USD {amount}"
+    },
+    "share": "Compartí tu resultado"
+  },
+  "common": {
+    "kgCO2": "kg CO₂",
+    "eventBy": "Powered by"
+  }
+}
