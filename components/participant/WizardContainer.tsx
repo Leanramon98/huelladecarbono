@@ -12,7 +12,8 @@ import {
   UtensilsCrossed, 
   ChevronLeft, 
   ChevronRight,
-  Check
+  Check,
+  Sprout
 } from 'lucide-react';
 import { WizardStep } from '@/lib/types';
 
