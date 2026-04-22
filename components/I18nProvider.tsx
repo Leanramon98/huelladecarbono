@@ -18,12 +18,8 @@ export default function I18nProvider({ children }: { children: ReactNode }) {
     setIsMounted(true);
   }, []);
 
-  if (!isMounted) {
-    return <>{children}</>;
-  }
-
   return (
-    <NextIntlClientProvider locale={language} messages={messagesMap[language]}>
+    <NextIntlClientProvider locale={language || 'es'} messages={messagesMap[language || 'es']}>
       {children}
     </NextIntlClientProvider>
   );

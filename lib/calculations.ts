@@ -115,43 +115,4 @@ export function calculateTotal(tripData: TripData, eventConfig: EventConfig): Fo
   };
 }
 
-// --- BASIC INLINE TESTS ---
 
-if (typeof window === 'undefined') {
-  console.log('--- Carbon Footprint Calculation Tests ---');
-
-  const getCity = (iata: string) => CITIES.find(c => c.iata === iata)!;
-  const buildLeg = (from: string, to: string) => {
-    const c1 = getCity(from);
-    const c2 = getCity(to);
-    return {
-      from: c1,
-      to: c2,
-      distanceKm: haversineDistance(c1.lat, c1.lng, c2.lat, c2.lng)
-    };
-  };
-
-  // Test 1: Buenos Aires -> Río directo, economy, round trip
-  const ezeGig = buildLeg('EZE', 'GIG');
-  const test1 = calculateFlightEmissions([ezeGig], 'economy', true);
-  console.log(`Test 1: EZE -> GIG (Economy, RT) = ${test1.toFixed(2)} kg CO₂ (Expected ≈ 960*)`);
-  // Note: if expected is 960, it might be without RFI. Let's see without RFI:
-  const test1NoRfi = test1 / EMISSION_FACTORS.flight.rfi;
-  console.log(`Test 1 (No RFI): ${test1NoRfi.toFixed(2)} kg CO₂`);
-
-  // Test 2: Madrid -> Río directo, economy, round trip
-  const madGig = buildLeg('MAD', 'GIG');
-  const test2 = calculateFlightEmissions([madGig], 'economy', true);
-  console.log(`Test 2: MAD -> GIG (Economy, RT) = ${test2.toFixed(2)} kg CO₂ (Expected ≈ 3740*)`);
-  const test2NoRfi = test2 / EMISSION_FACTORS.flight.rfi;
-  console.log(`Test 2 (No RFI): ${test2NoRfi.toFixed(2)} kg CO₂`);
-
-  // Test 3: São Paulo -> Río directo, economy, round trip
-  const gruGig = buildLeg('GRU', 'GIG');
-  const test3 = calculateFlightEmissions([gruGig], 'economy', true);
-  console.log(`Test 3: GRU -> GIG (Economy, RT) = ${test3.toFixed(2)} kg CO₂ (Expected ≈ 170*)`);
-  const test3NoRfi = test3 / EMISSION_FACTORS.flight.rfi;
-  console.log(`Test 3 (No RFI): ${test3NoRfi.toFixed(2)} kg CO₂`);
-  
-  console.log('-------------------------------------------');
-}
